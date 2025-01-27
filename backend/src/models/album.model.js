@@ -24,4 +24,4 @@ const albumSchema = new mongoose.Schema(
 );
 
 
-export const Song = mongoose.model("Album", albumSchema);
+export const Album = mongoose.model("Album", albumSchema);
