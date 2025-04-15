@@ -20,7 +20,7 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const initAuth = async () => {
       try {
-        const token = await getToken();
+        const token = await getToken({ template: "standard" });
         updateApiToken(token);
         if (token) {
           await checkAdminStatus();
